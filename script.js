@@ -4,6 +4,10 @@ const title = document.querySelector('h2');
 const explanation = document.querySelector('p');
 const copyright = document.querySelector('h4');
 
+function getFetch() {
+	
+}
+
 fetch(url)
 	.then(res => res.json()) // parse response as JSON
 	.then(data => {
