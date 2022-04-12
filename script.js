@@ -10,7 +10,7 @@ fetch(url)
 		image.src = data.hdurl;
 		title.textContent = data.title;
 		explanation.textContent = data.explanation;
-		copyright.textContent = `Image Credit: ${data.copyright}`;
+		if (data.copyright) copyright.textContent = `Image Credit: ${data.copyright}`;
 	})
 	.catch(err => {
 		console.log(`error ${err}`);
